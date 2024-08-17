@@ -24,4 +24,9 @@ class Company extends Model
         'allow_clock_out_till',
         'self_clocking',
     ];
+
+    public function roles()
+    {
+        return $this->hasMany(Role::class);
+    }
 }
