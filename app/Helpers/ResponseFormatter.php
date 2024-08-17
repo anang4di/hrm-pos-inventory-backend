@@ -24,8 +24,9 @@ class ResponseFormatter
     /**
      * Give success response.
      */
-    public static function success($data = null, $message = null)
+    public static function success($data = null, $message = null, $code = null)
     {
+        if (isset($code)) self::$response['meta']['code'] = $code;
         self::$response['meta']['message'] = $message;
         self::$response['data'] = $data;
 
