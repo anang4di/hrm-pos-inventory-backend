@@ -79,4 +79,20 @@ class RoleController extends Controller
             return ResponseFormatter::error($e->getMessage(), 500);
         }
     }
+
+    public function destroy($id)
+    {
+        try {
+            $role = Role::find($id);
+            if (!$role) {
+                return ResponseFormatter::error('Role not found', 404);
+            }
+
+            $role->delete();
+
+            return ResponseFormatter::success($role, 'Role deleted');
+        } catch (\Exception $e) {
+            return ResponseFormatter::error($e->getMessage(), 500);
+        }
+    }
 }
