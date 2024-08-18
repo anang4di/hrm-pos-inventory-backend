@@ -22,6 +22,12 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password'),
         ]);
 
+        User::factory()->create([
+            'name' => 'Salsa',
+            'email' => 'salsa@gmail.com',
+            'password' => Hash::make('password'),
+        ]);
+
         $this->call([
             CompanySeeder::class,
             RoleSeeder::class,
@@ -30,6 +36,7 @@ class DatabaseSeeder extends Seeder
             DesignationSeeder::class,
             ShiftSeeder::class,
             BasicSalarySeeder::class,
+            RoleUserSeeder::class,
         ]);
     }
 }
