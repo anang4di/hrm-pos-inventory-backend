@@ -39,4 +39,9 @@ class Company extends Model
     {
         return $this->hasMany(Designation::class);
     }
+
+    public function shifts()
+    {
+        return $this->hasMany(Shift::class);
+    }
 }

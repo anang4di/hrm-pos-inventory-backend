@@ -28,6 +28,7 @@ class DatabaseSeeder extends Seeder
             PermissionSeeder::class,
             PermissionRoleSeeder::class,
             DesignationSeeder::class,
+            ShiftSeeder::class,
         ]);
     }
 }
