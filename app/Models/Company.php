@@ -49,4 +49,9 @@ class Company extends Model
     {
         return $this->hasMany(BasicSalary::class);
     }
+
+    public function holidays()
+    {
+        return $this->hasMany(Holiday::class);
+    }
 }

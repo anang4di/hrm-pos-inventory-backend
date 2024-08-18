@@ -37,6 +37,7 @@ class DatabaseSeeder extends Seeder
             ShiftSeeder::class,
             BasicSalarySeeder::class,
             RoleUserSeeder::class,
+            HolidaySeeder::class,
         ]);
     }
 }

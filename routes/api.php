@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\BasicSalaryController;
 use App\Http\Controllers\Api\CompanyController;
 use App\Http\Controllers\Api\DepartmentController;
 use App\Http\Controllers\Api\DesignationController;
+use App\Http\Controllers\Api\HolidayController;
 use App\Http\Controllers\Api\RoleController;
 use App\Http\Controllers\Api\ShiftController;
 use Illuminate\Support\Facades\Route;
@@ -38,5 +39,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Basic Salaries
     Route::apiResource('/basic-salaries', BasicSalaryController::class);
+
+    // Holidays
+    Route::apiResource('/holidays', HolidayController::class);
 
 });
