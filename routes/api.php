@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Api\AttendanceController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\BasicSalaryController;
 use App\Http\Controllers\Api\CompanyController;
@@ -50,4 +51,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Leaves
     Route::apiResource('/leaves', LeaveController::class);
+
+    // Attendances
+    Route::apiResource('/attendances', AttendanceController::class);
 });

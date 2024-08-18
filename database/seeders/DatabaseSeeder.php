@@ -40,6 +40,7 @@ class DatabaseSeeder extends Seeder
             HolidaySeeder::class,
             LeaveTypeSeeder::class,
             LeaveSeeder::class,
+            AttendanceSeeder::class,
         ]);
     }
 }
