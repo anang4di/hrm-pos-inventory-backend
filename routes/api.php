@@ -3,6 +3,7 @@
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\CompanyController;
 use App\Http\Controllers\Api\DepartmentController;
+use App\Http\Controllers\Api\DesignationController;
 use App\Http\Controllers\Api\RoleController;
 use Illuminate\Support\Facades\Route;
 
@@ -26,5 +27,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Departments
     Route::apiResource('/departments', DepartmentController::class);
+
+    // Designation
+    Route::apiResource('/designations', DesignationController::class);
 
 });
