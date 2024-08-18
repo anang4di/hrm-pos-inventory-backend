@@ -38,6 +38,8 @@ class DatabaseSeeder extends Seeder
             BasicSalarySeeder::class,
             RoleUserSeeder::class,
             HolidaySeeder::class,
+            LeaveTypeSeeder::class,
+            LeaveSeeder::class,
         ]);
     }
 }

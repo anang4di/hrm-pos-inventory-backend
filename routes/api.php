@@ -6,6 +6,7 @@ use App\Http\Controllers\Api\CompanyController;
 use App\Http\Controllers\Api\DepartmentController;
 use App\Http\Controllers\Api\DesignationController;
 use App\Http\Controllers\Api\HolidayController;
+use App\Http\Controllers\Api\LeaveController;
 use App\Http\Controllers\Api\LeaveTypeController;
 use App\Http\Controllers\Api\RoleController;
 use App\Http\Controllers\Api\ShiftController;
@@ -47,4 +48,6 @@ Route::middleware('auth:sanctum')->group(function () {
     // Leave Types
     Route::apiResource('/leave-types', LeaveTypeController::class);
 
+    // Leaves
+    Route::apiResource('/leaves', LeaveController::class);
 });
