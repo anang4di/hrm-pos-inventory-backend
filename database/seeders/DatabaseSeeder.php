@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
             PermissionRoleSeeder::class,
             DesignationSeeder::class,
             ShiftSeeder::class,
+            BasicSalarySeeder::class,
         ]);
     }
 }

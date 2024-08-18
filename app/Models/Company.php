@@ -44,4 +44,9 @@ class Company extends Model
     {
         return $this->hasMany(Shift::class);
     }
+
+    public function basicSalaries()
+    {
+        return $this->hasMany(BasicSalary::class);
+    }
 }

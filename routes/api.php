@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\BasicSalaryController;
 use App\Http\Controllers\Api\CompanyController;
 use App\Http\Controllers\Api\DepartmentController;
 use App\Http\Controllers\Api\DesignationController;
@@ -34,5 +35,8 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Shifts
     Route::apiResource('/shifts', ShiftController::class);
+
+    // Basic Salaries
+    Route::apiResource('/basic-salaries', BasicSalaryController::class);
 
 });
