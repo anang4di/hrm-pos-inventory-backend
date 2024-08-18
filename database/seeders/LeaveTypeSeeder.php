@@ -12,7 +12,7 @@ class LeaveTypeSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Holiday::create([
+        \App\Models\LeaveType::create([
             'company_id' => 1,
             'name' => 'Anual Leave',
             'is_paid' => 1,
@@ -20,7 +20,7 @@ class LeaveTypeSeeder extends Seeder
             'created_by' => 1,
         ]);
 
-        \App\Models\Holiday::create([
+        \App\Models\LeaveType::create([
             'company_id' => 1,
             'name' => 'Sick Leave',
             'is_paid' => 1,
@@ -28,7 +28,7 @@ class LeaveTypeSeeder extends Seeder
             'created_by' => 1,
         ]);
 
-        \App\Models\Holiday::create([
+        \App\Models\LeaveType::create([
             'company_id' => 1,
             'name' => 'Unpaid Leave',
             'is_paid' => 0,
