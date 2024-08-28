@@ -9,6 +9,7 @@ use App\Http\Controllers\Api\DesignationController;
 use App\Http\Controllers\Api\HolidayController;
 use App\Http\Controllers\Api\LeaveController;
 use App\Http\Controllers\Api\LeaveTypeController;
+use App\Http\Controllers\Api\PayrollController;
 use App\Http\Controllers\Api\RoleController;
 use App\Http\Controllers\Api\ShiftController;
 use Illuminate\Support\Facades\Route;
@@ -54,4 +55,7 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Attendances
     Route::apiResource('/attendances', AttendanceController::class);
+
+    // Payrolls
+    Route::apiResource('/payrolls', PayrollController::class);
 });
